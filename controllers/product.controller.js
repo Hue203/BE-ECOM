@@ -5,7 +5,8 @@ const productController = {};
 //get all prodcuts with filter and query
 productController.getAllProducts = async (req, res, next) => {
   try {
-    let { page, limit, sortBy, ...filter } = { ...req.query };
+    let { page, limit, sortBy, ...filter } = { ...req.query }; //// hoi lai Tan //
+
     page = parseInt(page) || 1;
     limit = parseInt(limit) || 10;
 

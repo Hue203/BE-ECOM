@@ -3,7 +3,7 @@ const bcrypt = require("bcryptjs");
 const User = require("../models/User");
 const Order = require("../models/Order");
 const { AppError } = require("../helpers/utils.helper");
-const { findOneAndUpdate } = require("../models/User");
+  
 const userController = {};
 
 userController.register = async (req, res, next) => {

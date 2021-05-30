@@ -13,7 +13,7 @@ orderController.createOrder = async (req, res, next) => {
     //create Order that represent.
     const user = await User.findById(userId);
     if (!user) {
-      return next(new AppError(400, "User not found"));
+      return next(new Error("400-User not found"));
     }
     const product = await Product.findById(productId);
 

@@ -57,6 +57,6 @@ userSchema.methods.generateToken = async function () {
   return accessToken;
 };
 userSchema.plugin(require("./plugins/isDeletedFalse"));
-
+mongoose.models = {};
 const User = mongoose.model("User", userSchema);
 module.exports = User;
